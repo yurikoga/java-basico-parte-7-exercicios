@@ -1,0 +1,9 @@
+Autenticação ("Quem é você?"):
+É o processo de verificar a identidade de um usuário ou sistema.
+
+Exemplo: Um cliente informa e-mail e senha na rota /auth/login e recebe um token JWT validando sua identidade.
+
+Autorização ("O que você pode fazer?"):
+É a verificação das permissões que aquela identidade autenticada possui para acessar um recurso ou executar uma ação.
+
+Exemplo: Um usuário já logado (ROLE_USER) tenta acessar DELETE /api/usuarios/5, mas recebe erro HTTP 403 (Forbidden) porque apenas administradores (ROLE_ADMIN) têm permissão para excluir usuários.
